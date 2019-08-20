@@ -1,6 +1,6 @@
-# <b> Age Prediction from face image by Deep Learning
+# Age Prediction from face image by Deep Learning
   
-## <b>Introduction
+## Introduction
   
 <p style="text-indent: 2.5em;">
     Age and gender are the key facial attributes, play an essential role in social interactions. Automatic age and gender prediction have become relevant to an increasing amount of applications, particularly when social platforms and social media become common in human's daily life. Estimation of age and gender from a face image is a critical task in artificial intelligence applications, such as access control, human-computer interaction, law enforcement, marketing intelligence, and visual surveillance.
@@ -11,61 +11,28 @@
 <p style="text-indent: 2.5em;">
     The aim of this study is to create a model to classify age group from the Adience face image project, the face images provided by the open university of Israel. The aligned face images are retrieved, then resize and feed into the model in order to train the best model for face prediction.
   
-## <b>Data Acquisition
+## Data Acquisition
 <p style="text-indent: 2.5em;">
   The data used in this study derived from Adience face image project, the open university of Israel. The data is downloaded then extract into the computer drive. The link of the dataset is https://talhassner.github.io/home/projects/Adience/Adience-data.html . The data used in this study include, fold.txt files and image files in the aligned folder which derived from extract aligned.tar.gz as shown in the figure below,
-
+To Download Dataset:
+> http://www.openu.ac.il/home/hassner/Adience/data.html
 
 ## Required Libraries
-from numpy.random import seed
+- Python 3.6.8
+- Keras 2.2.4
+- OpenCV 4.1.0
+- Sklearn 0.21.3
+- joblib 0.13.2
 
-from tensorflow import set_random_seed
+## Transfer learning using pre-trained model
+    - VGGFace
+    - Resnet50
+    
+## model wieght
+    - VGGFace
+    - Imagenet
 
-import os
-
-import numpy as np
-
-import pandas as pd
-
-from matplotlib import pyplot as plt
-
-import seaborn as sns
-
-import cv2
-
-import keras
-
-from keras.models import Sequential, Model
-
-from keras.preprocessing.image import ImageDataGenerator
-
-from keras.layers import Dense, Dropout, MaxPooling2D, BatchNormalization, Flatten,\
-ZeroPadding2D, Convolution2D, Activation, GlobalMaxPooling2D
-
-from keras.applications.resnet50 import ResNet50
-
-from sklearn.externals import joblib
-
-from sklearn.metrics import confusion_matrix, roc_curve, precision_recall_curve,\
-average_precision_score, f1_score, auc, balanced_accuracy_score 
-
-from sklearn.utils import shuffle
-
-from sklearn.model_selection import train_test_split
-
-from sklearn.utils import class_weight
-
-from keras.utils import to_categorical
-
-from itertools import cycle
-
-from collections import Counter
-
-from scipy import interp
-
-import itertools
-
-### <b> Conclusions
+## Conclusions
 <p style="text-indent: 2.5em;">
     The study aims to predict age from face images, the model using deep learning, the convolutional neural network with transfer learning. The pre-trained networks used in this study are Resnet50 (with imagenet weight), and VGG faces (with VGG face weight). The aligned face images are retrieved from the Adience face image project, the open university of Israel, then resize and feed into the model in order to train the best model for face prediction.
 <p style="text-indent: 2.5em;">
