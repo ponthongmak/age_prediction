@@ -18,32 +18,52 @@
 
 ## Required Libraries
 from numpy.random import seed
+
 from tensorflow import set_random_seed
+
 import os
+
 import numpy as np
+
 import pandas as pd
+
 from matplotlib import pyplot as plt
+
 import seaborn as sns
+
 import cv2
+
 import keras
+
 from keras.models import Sequential, Model
+
 from keras.preprocessing.image import ImageDataGenerator
+
 from keras.layers import Dense, Dropout, MaxPooling2D, BatchNormalization, Flatten,\
 ZeroPadding2D, Convolution2D, Activation, GlobalMaxPooling2D
+
 from keras.applications.resnet50 import ResNet50
+
 from sklearn.externals import joblib
+
 from sklearn.metrics import confusion_matrix, roc_curve, precision_recall_curve,\
 average_precision_score, f1_score, auc, balanced_accuracy_score 
+
 from sklearn.utils import shuffle
+
 from sklearn.model_selection import train_test_split
+
 from sklearn.utils import class_weight
+
 from keras.utils import to_categorical
+
 from itertools import cycle
+
 from collections import Counter
+
 from scipy import interp
+
 import itertools
-
-
 
 ### <b> Conclusions
 <p style="text-indent: 2.5em;">
