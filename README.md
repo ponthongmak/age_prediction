@@ -13,9 +13,9 @@
   
 ## Data Acquisition
 <p style="text-indent: 2.5em;">
-  The data used in this study derived from Adience face image project, the open university of Israel. The data is downloaded then extract into the computer drive. The link of the dataset is https://talhassner.github.io/home/projects/Adience/Adience-data.html . The data used in this study include, fold.txt files and image files in the aligned folder which derived from extract aligned.tar.gz as shown in the figure below,
-To Download Dataset:
-> http://www.openu.ac.il/home/hassner/Adience/data.html
+  The data used in this study derived from Adience face image project, the open university of Israel. The data is downloaded then extract into the computer drive. The data used in this study include, fold.txt files and image files in the aligned folder which derived from extract aligned.tar.gz.
+  
+Download Dataset:> http://www.openu.ac.il/home/hassner/Adience/data.html
 
 ## Required Libraries
 - Python 3.6.8
@@ -24,11 +24,11 @@ To Download Dataset:
 - Sklearn 0.21.3
 - joblib 0.13.2
 
-## Transfer learning using pre-trained model
-    - VGGFace
+## Pre-trained model (for transfer learning)
+    - VGG-Very-Deep-16 CNN
     - Resnet50
     
-## model wieght
+## Model wieght training
     - VGGFace
     - Imagenet
 
